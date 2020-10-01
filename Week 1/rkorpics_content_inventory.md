@@ -26,7 +26,6 @@
 - Micro-interactions on the website are pretty well animated, and I think the transitions are pretty smooth. Overall, I think this helps contribute to the strong personality of the website.
 - I like how it's able to be fun and interesting to look at while still maintaining its professionalism.
 
-#
 ## About Me
 
 I’m a quirky UI, UX, and Graphic Designer originally from the lovely coastal city of Newburyport, MA. As a full-time student at Drexel University in Philadelphia, PA, I’m currently perusing a Bachelor of Science in Interactive Digital Media. 
@@ -38,7 +37,7 @@ For my current work, I rely on my trustworthy MacBook Pro and the Adobe Creative
 I love what I do, and the reason why is simple: I find joy in expressing my ideas! I’m always thinking about concepts and stories that excite me, and I’m always interested in taking risky moves and breaking the norms. I work hard to create a world where my wildest dreams can exist, turning my own wishes into a reality.
 
 I hope you enjoy looking through my portfolio, and if you would like to contact me feel free to send me an email. I’ll reply to you as soon as I possibly can.
-#
+
 ## My Resume
 
 **Contact**
@@ -92,7 +91,6 @@ Bank Teller Internship, January to June 2019
 - Introduction to Human Computer Interaction 
 - Design Thinking in PROD
 
-#
 ## Professional Logo
 
 ![Logo](https://i.imgur.com/OoRi7Qp.jpg)

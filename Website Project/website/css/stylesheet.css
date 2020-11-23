@@ -4,23 +4,66 @@ body{
     background-color: rgba(249, 249, 249)
 }
 
+.button{
+    border:.2em solid red;
+    color: red;
+    display:block;
+    font: 2em Raleway;
+    font-weight: bold;
+    margin: 1em;
+    padding: .3em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background: red;
+    color: white;
+    font: 2em Raleway;
+    font-weight: bold;
+}
+
 .home {
     margin: 2.5rem auto 2.5rem auto;
-    max-width: 19rem;
+    max-width: 38rem;
     text-align: center;
 }
 
 /* Typography */
 
 h1 {
-    font: 2em Renogare;
+    font: 4em Renogare;
 }
 
 h3 {
-    font: 1em Proxima Nova Rg;
+    font: 2em Raleway;
+}
+
+.logofonts{ /* This class defines the margin space between the title and subtitle used on the homepage as being closer to each other than usual*/
+margin: .75rem auto .75rem auto;
 }
 
 /* Custom Fonts */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Bold.woff') format('woff'),
+        url('fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/raleway/Raleway-Light.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Light.woff') format('woff'),
+        url('fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'Renogare';

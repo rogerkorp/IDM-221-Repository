@@ -1,7 +1,7 @@
 /* General Styles & Divisions */
 
 body{
-    background-color: rgba(249, 249, 249)
+    background-color: rgba(249, 249, 249);
 }
 
 .button{
@@ -12,6 +12,7 @@ body{
     font-weight: bold;
     margin: 1em;
     padding: .3em;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -23,10 +24,57 @@ body{
     font-weight: bold;
 }
 
+header{
+    position: fixed;
+    top: 0;
+}
+
+.headerlogo{
+    display: inline-block;
+    float: left;
+    margin: 0em 0em 0em 1em;
+}
+
 .home {
     margin: 2.5rem auto 2.5rem auto;
     max-width: 38rem;
     text-align: center;
+}
+
+.navigation{ 
+    background: white;
+    box-shadow: 0 -50px 100px grey;
+    display: inline-block;
+    max-height: 7.25em;
+    width: 100%;
+    overflow: hidden;
+    padding: .5em;
+    position: fixed;
+    right:0;
+    top:0;
+}
+
+.navigationlink{
+    border:0.2em solid black;
+    color: black;
+    display:inline-block;
+    float: right;
+    font: 1.5em Raleway;
+    font-weight: bold;
+    margin: 1em .5em 0em 0em;
+    min-width: 7em;
+    padding: .25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.navigationlink:hover{
+    background: black;
+    color: white;
+    font: 1.5em Raleway;
+    font-weight: bold;
 }
 
 /* Typography */

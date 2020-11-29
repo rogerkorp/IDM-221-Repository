@@ -1,12 +1,12 @@
 /* General Styles & Divisions */
 
-body{
+body{ /* Makes the background color of the document an off white */
     background-color: rgba(249, 249, 249);
 }
 
-.button{
-    border:.2em solid red;
-    color: red;
+.button{ /* Used for the fancy links used on the homepage of the website */
+    border:.2em solid black;
+    color: black;
     display:block;
     font: 2em Raleway;
     font-weight: bold;
@@ -17,33 +17,47 @@ body{
     text-transform: uppercase;
 }
 
-.button:hover{
-    background: red;
+.button:hover{ /* A sister rule to the ".button" links, this one allows them to fill in with color when hovered over */
+    background: black;
     color: white;
     font: 2em Raleway;
     font-weight: bold;
 }
 
-header{
-    position: fixed;
-    top: 0;
+.content{ /* This rule allows any page with a navigation header to start below the header. */
+    position: relative;
+    top: 7.5em;
 }
 
-.headerlogo{
-    display: inline-block;
+header{ /* This positions navigation header to the top of the page */
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.headerlogo{ /* A small rule that places my personal logo to the left of the navigation bar */
     float: left;
     margin: 0em 0em 0em 1em;
 }
 
-.home {
+.home { /* This rule sets the margin space and center aligns the homepage */
     margin: 2.5rem auto 2.5rem auto;
     max-width: 38rem;
     text-align: center;
 }
 
-.navigation{ 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+main{
+    z-index: 1;
+}
+
+.navigation{ /* This rule sets the style for the navigation header. */
     background: white;
-    box-shadow: 0 -50px 100px grey;
+    box-shadow: 0 -50px 100px rgba(128, 128, 128, 0.8);
     display: inline-block;
     max-height: 7.25em;
     width: 100%;
@@ -54,15 +68,15 @@ header{
     top:0;
 }
 
-.navigationlink{
+.navigationlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
     border:0.2em solid black;
     color: black;
-    display:inline-block;
     float: right;
     font: 1.5em Raleway;
     font-weight: bold;
     margin: 1em .5em 0em 0em;
     min-width: 7em;
+    height: auto;
     padding: .25em;
     text-align: center;
     text-decoration: none;
@@ -70,24 +84,74 @@ header{
     word-wrap: break-word
 }
 
-.navigationlink:hover{
+.navigationlink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
     background: black;
     color: white;
     font: 1.5em Raleway;
     font-weight: bold;
 }
 
+.navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
+    border:0.2em solid black;
+    background: black;
+    color: white;
+    float: right;
+    font: 1.5em Raleway;
+    font-weight: bold;
+    margin: 1em .5em 0em 0em;
+    min-width: 7em;
+    height: auto;
+    padding: .25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.portfolioPreview{ /* A ruleset used to define the area that surrounds each portfolio piece */
+    background: white;
+    box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
+    margin: 2em auto;
+    max-width: 50em;
+    min-width: 30em;
+    padding: 2em;
+}
+
+.portfolioVideo{ /* Similar to the preview ruleset, however this version is only used in cases where theres a video nested in the div */
+    background: rgb(59, 59, 59);
+    box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
+    color: white;
+    margin: 2em auto;
+    max-width: 50em;
+    min-width: 30em;
+    padding: 2em;
+}
+
 /* Typography */
 
-h1 {
+h1{
     font: 4em Renogare;
 }
 
-h3 {
-    font: 2em Raleway;
+.pageTitle{ /* A version used only used at the top of major section pages */
+    font: 4em Renogare;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.logofonts{ /* This class defines the margin space between the title and subtitle used on the homepage as being closer to each other than usual*/
+h2{
+    font: 3em Raleway;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -0.25em auto;
+}
+
+h3{
+    font: 1.5em Raleway;
+    margin: 0.8em auto 1em;
+}
+
+.logofonts{ /* This class defines the margin space between the title and subtitle used on the homepage as being closer to each other than usual */
 margin: .75rem auto .75rem auto;
 }
 

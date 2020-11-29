@@ -60,12 +60,12 @@ main{
     box-shadow: 0 -50px 100px rgba(128, 128, 128, 0.8);
     display: inline-block;
     max-height: 7.25em;
-    width: 100%;
     overflow: hidden;
     padding: .5em;
     position: fixed;
     right:0;
     top:0;
+    width: 100%;
 }
 
 .navigationlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
@@ -74,9 +74,9 @@ main{
     float: right;
     font: 1.5em Raleway;
     font-weight: bold;
-    margin: 1em .5em 0em 0em;
-    min-width: 7em;
     height: auto;
+    margin: 1em .5em 0em 0em;
+    max-width: 7em;
     padding: .25em;
     text-align: center;
     text-decoration: none;
@@ -98,14 +98,24 @@ main{
     float: right;
     font: 1.5em Raleway;
     font-weight: bold;
-    margin: 1em .5em 0em 0em;
-    min-width: 7em;
     height: auto;
+    margin: 1em .5em 0em 0em;
+    max-width: 7em;
     padding: .25em;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     word-wrap: break-word
+}
+
+.portfolioImage{
+    background: white;
+    box-shadow: 1em 1em 50px rgba(128, 128, 128, 0.5);
+    display: inline-block;
+    margin: 1% 1%;
+    max-width: 28.5%;
+    max-height: auto;
+    padding: 1%;
 }
 
 .portfolioPreview{ /* A ruleset used to define the area that surrounds each portfolio piece */
@@ -133,12 +143,6 @@ h1{
     font: 4em Renogare;
 }
 
-.pageTitle{ /* A version used only used at the top of major section pages */
-    font: 4em Renogare;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 h2{
     font: 3em Raleway;
     font-weight: bold;
@@ -152,9 +156,20 @@ h3{
 }
 
 .logofonts{ /* This class defines the margin space between the title and subtitle used on the homepage as being closer to each other than usual */
-margin: .75rem auto .75rem auto;
+    margin: .75rem auto .75rem auto;
 }
 
+.pageSubtitle{ /* A version used only used at the top of major section pages, below the section title */
+    font: 2em Raleway;
+    text-align: center;
+    margin: -0.75em auto 1em auto;
+}
+
+.pageTitle{ /* A version used only used at the top of major section pages */
+    font: 4em Renogare;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* Custom Fonts */
 
 @font-face {

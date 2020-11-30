@@ -5,16 +5,6 @@ body{ /* Makes the background color of the document an off white */
     color: rgb(70, 70, 70);
 }
 
-.bodyWork{
-    background-color: rgb(220, 248, 228);;
-    color: rgb(70, 70, 70);
-}
-
-.bodyVisual{
-    background-color: rgb(255, 250, 233);
-    color: rgb(70, 70, 70);
-}
-
 .button1{ /* Used for the fancy links used on the homepage of the website */
     border:.2em solid rgb(247, 94, 80);
     color: rgb(247, 94, 80);
@@ -75,9 +65,43 @@ body{ /* Makes the background color of the document an off white */
     font-weight: bold;
 }
 
+.contactLink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
+    border:0.2em solid white;
+    color: white;
+    font: 1.5em Raleway;
+    font-weight: bold;
+    height: auto;
+    line-height: 3em;
+    margin: .5em .5em 20em 0em;
+    max-width: 7em;
+    padding: .25em;
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word
+}
+
+.contactLink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
+    background: white;
+    color: rgb(247, 94, 80);
+    font: 1.5em Raleway;
+    font-weight: bold;
+}
+
 .content{ /* This rule allows any page with a navigation header to start below the header. */
     position: relative;
     top: 7.5em;
+}
+
+footer{
+    background: white;
+    bottom: auto;
+    font: .75em Raleway;
+    height: 5em;
+    padding: 3em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
 }
 
 header{ /* This positions navigation header to the top of the page */
@@ -107,6 +131,16 @@ img{
 
 main{
     z-index: 1;
+}
+
+.letschat{
+    background: rgb(247, 94, 80);
+    box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
+    color: white;
+    margin: 2em auto;
+    max-width: 50em;
+    min-width: 30em;
+    padding: 2em;
 }
 
 .navigation{ /* This rule sets the style for the navigation header. */
@@ -209,8 +243,25 @@ h3{
     margin: 0.8em auto 1em;
 }
 
+h4{
+    font: 2em Raleway;
+    font-weight: bold;
+    margin: 1em auto 1em;
+    text-align: center;
+}
+
+h5{
+    font: 3em Raleway;
+    font-weight: bold;
+    margin: .25em auto .25em; 
+}
+
 .logofonts{ /* This class defines the margin space between the title and subtitle used on the homepage as being closer to each other than usual */
     margin: .75rem auto .75rem auto;
+}
+
+p{
+    font: 1.15em Raleway;
 }
 
 .pageSubtitle{ /* A version used only used at the top of major section pages, below the section title */

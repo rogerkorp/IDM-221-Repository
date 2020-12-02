@@ -94,14 +94,15 @@ body{ /* Makes the background color of the document an off white */
 
 footer{
     background: white;
-    bottom: auto;
+    bottom: -4em;
     font: .75em Raleway;
     height: 5em;
+    position: relative;
     padding: 3em;
-    position: absolute;
     text-align: center;
-    width: 100%;
-    z-index: 2;
+    min-width: 10em;
+    max-width: auto;
+    z-index: 1;
 }
 
 header{ /* This positions navigation header to the top of the page */
@@ -139,7 +140,7 @@ main{
     color: white;
     margin: 2em auto;
     max-width: 50em;
-    min-width: 30em;
+    min-width: 10em;
     padding: 2em;
 }
 
@@ -156,44 +157,95 @@ main{
     width: 100%;
 }
 
-.navigationlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
-    border:0.2em solid black;
-    color: black;
-    float: right;
-    font: 1.5em Raleway;
-    font-weight: bold;
-    height: auto;
-    margin: 1em .5em 0em 0em;
-    max-width: 7em;
-    padding: .25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    word-wrap: break-word
+@media screen and (min-width: 570px) {
+    .navigationlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
+        border:0.2em solid black;
+        color: black;
+        float: right;
+        font: 1.5em Raleway;
+        font-weight: bold;
+        height: auto;
+        margin: 1em .5em 0em 0em;
+        max-width: 7em;
+        padding: .25em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        word-wrap: break-word
+    }
 }
 
-.navigationlink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
-    background: black;
-    color: white;
-    font: 1.5em Raleway;
-    font-weight: bold;
+@media screen and (max-width: 569px) {
+    .navigationlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
+        border:0.2em solid black;
+        color: black;
+        float: right;
+        font: 1.25em Raleway;
+        font-weight: bold;
+        height: auto;
+        margin: 0em .5em .5em 0em;
+        max-width: 7em;
+        padding: .25em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        word-wrap: break-word
+    }
 }
 
-.navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
-    border:0.2em solid black;
-    background: black;
-    color: white;
-    float: right;
-    font: 1.5em Raleway;
-    font-weight: bold;
-    height: auto;
-    margin: 1em .5em 0em 0em;
-    max-width: 7em;
-    padding: .25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    word-wrap: break-word
+@media screen and (min-width: 570px) {
+    .navigationlink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
+        background: black;
+        color: white;
+        font: 1.5em Raleway;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 569px) {
+    .navigationlink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
+        background: black;
+        color: white;
+        font: 1.25em Raleway;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
+        border:0.2em solid black;
+        background: black;
+        color: white;
+        float: right;
+        font: 1.5em Raleway;
+        font-weight: bold;
+        height: auto;
+        margin: 1em .5em 0em 0em;
+        max-width: 7em;
+        padding: .25em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        word-wrap: break-word
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
+        border:0.2em solid black;
+        background: black;
+        color: white;
+        float: right;
+        font: 1.25em Raleway;
+        font-weight: bold;
+        height: auto;
+        margin: 0em .5em .5em 0em;
+        max-width: 7em;
+        padding: .25em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        word-wrap: break-word
+    }
 }
 
 .portfolioImage{
@@ -211,7 +263,7 @@ main{
     box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
     margin: 2em auto;
     max-width: 50em;
-    min-width: 30em;
+    min-width: 10em;
     padding: 2em;
 }
 
@@ -221,8 +273,21 @@ main{
     color: white;
     margin: 2em auto;
     max-width: 50em;
-    min-width: 30em;
+    min-width: 10em;
     padding: 2em;
+}
+
+.VAPage{
+    background: white;
+    font: .75em Raleway;
+    height: 5em;
+    position: relative;
+    bottom: -15em;
+    padding: 3em;
+    text-align: center;
+    min-width: 10em;
+    max-width: auto;
+    z-index: 1;
 }
 
 /* Typography */
@@ -271,7 +336,7 @@ p{
 }
 
 .pageTitle{ /* A version used only used at the top of major section pages */
-    font: 4em Renogare;
+    font: 3em Renogare;
     text-align: center;
     text-transform: uppercase;
 }

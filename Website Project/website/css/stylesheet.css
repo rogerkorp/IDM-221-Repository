@@ -65,7 +65,7 @@ body{ /* Makes the background color of the document an off white */
     font-weight: bold;
 }
 
-.contactLink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
+.contactlink{ /* This rule essentially does the same job as ".button" but it has a few key differences that make it more suitable for the nav bar. */
     border:0.2em solid white;
     color: white;
     font: 1.5em Raleway;
@@ -80,7 +80,7 @@ body{ /* Makes the background color of the document an off white */
     word-wrap: break-word
 }
 
-.contactLink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
+.contactlink:hover{ /* A realative pseudoclass modifier for the links. This basically makes the link recognize when someone is hovering over it in the navigation.*/
     background: white;
     color: rgb(247, 94, 80);
     font: 1.5em Raleway;
@@ -211,7 +211,7 @@ main{
 }
 
 @media screen and (min-width: 570px) {
-    .navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
+    .navigationvisiting { /* Keeps the button of the page you're currently visited colored*/
         border:0.2em solid black;
         background: black;
         color: white;
@@ -230,7 +230,7 @@ main{
 }
 
 @media screen and (max-width: 569px) {
-    .navigationVisiting { /* Keeps the button of the page you're currently visited colored*/
+    .navigationvisiting { /* Keeps the button of the page you're currently visited colored*/
         border:0.2em solid black;
         background: black;
         color: white;
@@ -248,7 +248,7 @@ main{
     }
 }
 
-.portfolioImage{
+.portfolioimage{
     background: white;
     box-shadow: 1em 1em 50px rgba(128, 128, 128, 0.5);
     display: inline-block;
@@ -258,7 +258,7 @@ main{
     padding: 1%;
 }
 
-.portfolioPreview{ /* A ruleset used to define the area that surrounds each portfolio piece */
+.portfoliopreview{ /* A ruleset used to define the area that surrounds each portfolio piece */
     background: white;
     box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
     margin: 2em auto;
@@ -267,7 +267,7 @@ main{
     padding: 2em;
 }
 
-.portfolioVideo{ /* Similar to the preview ruleset, however this version is only used in cases where theres a video nested in the div */
+.portfoliovideo{ /* Similar to the preview ruleset, however this version is only used in cases where theres a video nested in the div */
     background: rgb(59, 59, 59);
     box-shadow: 2em 2em 100px rgba(128, 128, 128, 0.5);
     color: white;
@@ -277,7 +277,7 @@ main{
     padding: 2em;
 }
 
-.VAPage{
+.vapage{
     background: white;
     font: .75em Raleway;
     height: 5em;
@@ -334,13 +334,13 @@ p{
     font: 1.15em Raleway;
 }
 
-.pageSubtitle{ /* A version used only used at the top of major section pages, below the section title */
+.pagesubtitle{ /* A version used only used at the top of major section pages, below the section title */
     font: 2em Raleway;
     text-align: center;
     margin: -0.75em auto 1em auto;
 }
 
-.pageTitle{ /* A version used only used at the top of major section pages */
+.pagetitle{ /* A version used only used at the top of major section pages */
     font: 3em Renogare;
     text-align: center;
     text-transform: uppercase;

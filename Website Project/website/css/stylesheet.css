@@ -160,14 +160,14 @@ main{
 }
 
 @media screen and (min-width: 570px) {
-.portfolioimage{
+    .portfolioimage{
     background: white;
     box-shadow: 1em 1em 50px rgba(128, 128, 128, 0.5);
     display: inline-block;
     margin: 1% 1%;
     max-width: 28.5%;
     padding: 1%;
-}
+    }
 }
 
 @media screen and (max-width: 569px) {
@@ -177,7 +177,7 @@ main{
         display: inline-block;
         margin: 1% 1%;
         padding: 1%;
-    }
+        }
     }
 
 .portfoliopreview{ /* A ruleset used to define the area that surrounds each portfolio piece */
